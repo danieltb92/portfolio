@@ -8,7 +8,6 @@
     <meta name="description" content="Portfolio de Daniel Tunjano">
     <!--OPEN GRAFH-->
     <title>Portfolio | Daniel Tunjano</title>
-
     
     <!-- HTML Meta Tags -->
     <title>¡Hola!, soy Daniel Tunjano</title>
@@ -30,59 +29,154 @@
     <meta name="twitter:image" content="https://danieltunjano.super.siteundefined">
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img style="height: 34px;" src="assets/Logotype/Frame 15.svg" alt="Logotipo Daniel Tunjano">
-            <a href="#home">Home</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#sobreMi">Sobre mi</a>
-            <a href="#Contacto">Contacto</a>
-            <ul>
-                <li>Home</li>
-                <li>Proyectos</li>
-                <li>Sobre mi</li>
-                <li>Contacto</li>
-            </ul>
+    <header class="container-navbar">
+        <img class="navbar-logo" src="assets/Logotype/Frame 15.svg" alt="Logotipo Daniel Tunjano">
+        <nav class="navbar">
+            <a class="button" href="#home">Home</a>
+            <a class="button" href="#proyectos">Proyectos</a>
+            <a class="button" href="#sobreMi">Sobre mi</a>
+            <a class="button" href="#Contacto">Contacto</a>
         </nav>
     </header>
+
     <main>
-       <section>
-        <img style="height: 262px;" src="assets/Logotype/Cute Avatar.svg" alt="">
-         <h1>¡Hola!, soy <span>Daniel Tunjano</span></h1>
-         
+        <section id="home" class="container-hero">
+            <div class="hero">
+                <img src="assets/Logotype/Cute Avatar.svg" alt="">
+                <h1>¡Hola!,<br>&nbsp soy<span> Daniel<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tunjano</span></h1> 
+            </div>
         
+            <div class="container-footerHero">
+                <div class="footerHero-links">
+                    <button class="button btn-medium">Contactame</button>
+                    <img src="assets/icons/bxl-github.svg" alt="icono Github">
+                    <img src="assets/icons/bxl-linkedin.svg" alt="icono Linkedin">
+                    <img src="assets/icons/bx-envelope.svg" alt="icono Email">
+                </div>
+        
+                <div class="footerHero-description">
+                    <h3>Diseñador UX UI & <br> Desarrollador Fronted</h3>
+                    <h4>| design & code.</h4>
+                </div>
+            </div>
        </section>
 
-       <aside>
-        <div>
-            <button>Contactame</button>
-            <img src="assets/icons/bxl-github.svg" alt="icono Github">
-            <img src="assets/icons/bxl-linkedin.svg" alt="icono Linkedin">
-            <img src="assets/icons/bx-envelope.svg" alt="icono Email">
-        </div>
+       <div class="container-divider">
+            <div class="divider"></div>
+       </div>
 
-        <div>
-            <h3>Diseñador UX UI & <br> Desarrollador Fronted</h3>
-            <h4>| design & code.</h4>
-        </div>
-       </aside>
-
-       <article>
-
-        <h2>Sobre mi</h2>
-        <p><strong>Diseñador UI/UX y desarrollador fronted</strong>, poseo habilidades tanto en diseño como en desarrollo, 
-            lo que me permite crear soluciones digitales efectivas y centradas en el usuario.
-            Mi pasión por el diseño y la tecnología me permite crear interfaces en diferentes 
-            plataformas que son atractivas y fáciles de usar, lo que mejora la experiencia del usuario.
-        </p>
-
+       <article id="sobreMi" class="container-aboutme">
+            <div class="aboutme-button">
+                <h2 >Sobre mi</h2>
+                <button class="button"><box-icon name='up-arrow-alt' size="md" rotate='90' color="white" >alt</box-icon></button>
+            </div>
+            
+            <p> Diseñador UI/UX y desarrollador fronted, poseo habilidades tanto en diseño como en desarrollo, 
+                lo que me permite crear soluciones digitales efectivas y centradas en el usuario.
+                Mi pasión por el diseño y la tecnología me permite crear interfaces en diferentes 
+                plataformas que son atractivas y fáciles de usar, lo que mejora la experiencia del usuario.     
        </article>
+
+       <section class="container-skills">
+        <div class="title-skills">
+            <h2>Habilidades</h2>
+        </div>
+        <div class="container-skills-code">
+            <h3>CODE</h3>
+            <div class="container-tags">
+                <div class="tag">+ UX UI</div>
+                <div class="tag">+ Design System</div>
+                <div class="tag">+ Typography</div>
+                <div class="tag">+ Branding</div>
+                <div class="tag">+ Identity</div>
+                <div class="tag">+ Graphic Design</div>
+                <div class="tag">+ Photography</div>
+            </div>
+        </div>
+        <div class="container-skills-design">
+            <h3>DISEÑO</h3>
+            <div class="container-tags">
+                <div class="tag">+ UX UI</div>
+                <div class="tag">+ Design System</div>
+                <div class="tag">+ Typography</div>
+                <div class="tag">+ Branding</div>
+                <div class="tag">+ Identity</div>
+                <div class="tag">+ Graphic Design</div>
+                <div class="tag">+ Photography</div>
+            </div>
+        </div>
+        <div class="container-skills-lenguage">
+            <div class="container-lenguage">
+                <div class="lenguage">
+                    <img width="70" height="70" src="https://img.icons8.com/ios/70/FFFFFF/figma--v1.png" alt="figma--v1"/>
+                    <h4>Figma</h4>
+                </div>
+                <div class="lenguage">
+                    <img width="70" height="70" src="https://img.icons8.com/ios/70/FFFFFF/adobe-illustrator--v1.png" alt="adobe-illustrator--v1"/>
+                    <h4>Illustrator</h4>
+                </div>
+                <div class="lenguage">
+                    <img width="70" height="70" src="https://img.icons8.com/ios/70/FFFFFF/adobe-photoshop--v1.png" alt="adobe-photoshop--v1"/>
+                    <h4>Photoshop</h4>
+                </div>
+                <div class="lenguage">
+                    <img width="70" height="70" src="https://img.icons8.com/ios-filled/70/FFFFFF/html-5--v1.png" alt="html-5--v1"/>
+                    <h4>HTML</h4>
+                </div>
+                <div class="lenguage">
+                    <img width="70" height="70" src="https://img.icons8.com/ios-filled/70/FFFFFF/css3.png" alt="css3"/>
+                    <h4>CSS</h4>
+                </div>
+                <div class="lenguage">
+                    <img width="70" height="70" src="https://img.icons8.com/ios-filled/70/FFFFFF/javascript.png" alt="javascript"/>
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <div class="container-divider">
+            <div class="divider"></div>
+        </div>
+
+        <!-- <------------ PROJECTS ------------->
+
+        <div id="proyectos" class="container-projects">
+            <h2>&nbsp&nbspProyectos</h2#>
+            <section class="grid-projects">
+                <article class="project-card">
+                    <img src="assets/image-projects/Desktop - 13.png" alt="imagen proyecto">
+                    <h3>Proyecto</h3>
+                    <p>Descripcion</p>
+                </article>
+                <article class="project-card">
+                    <img src="assets/image-projects/Desktop - 5.png" alt="imagen proyecto">
+                    <h3>Proyecto</h3>
+                    <p>Descripcion</p>
+                </article>
+                <article class="project-card">
+                    <img src="assets/image-projects/Frame 3.png" alt="imagen proyecto">
+                    <h3>Proyecto</h3>
+                    <p>Descripcion</p>
+                </article>
+                <article class="project-card">
+                    <img src="assets/image-projects/Hero.png" alt="imagen proyecto">
+                    <h3>Proyecto</h3>
+                    <p>Descripcion</p>
+                </article>    
+            </section>
+        </div class="">
         
     </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
