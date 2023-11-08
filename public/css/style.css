@@ -95,21 +95,33 @@
 
 .button:hover{
     color: var(--dove-gray-900);/* Buttons/Button Small */
-    background: var(--white)
+    background: var(--white);
+    border-bottom: 1px solid var(--picton-blue-950);
 }
 
+body{
+    background-image: url(/assets/dots-pattern.svg);
+    background-repeat: repeat;
+}
 
+main{
+    margin: 0 12rem;
+}
 
 /* <---- NAVBAR ----> */
 
 .container-navbar{
+    margin: 0 auto;
     padding: 20px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 12rem;
+    margin-right: 12rem;
      
     .navbar-logo{
-        height: 40px;
+        width: 50px;
     }
 }
 
@@ -120,9 +132,18 @@
 
     width: wrap;
     border-radius: 30px;
-    background: var(--picton-blue-800);
+    /* background: var(--picton-blue-800); */
+}
+.navbar h3{
+    color: var(--dove-gray-800);
+
 }
 
+.btn-nav{
+    background: none;
+    color: var(--dove-gray-800);
+    padding: 6px 6px;
+}
 
 /* <---- HERO ----> */
 
@@ -136,6 +157,7 @@
     align-items: center;
     margin-bottom: 100px;
     position: relative;
+    
 }
 
 .hero{
@@ -151,7 +173,7 @@
 
     border-radius: 30px;
     border: 2px dashed var(--dove-gray-200) ;
-    
+    /* background-color: var(--white); */
 }
 .hero img{
     margin: 20px;
@@ -189,7 +211,10 @@
 }
 .footerHero-links img{
     width: 30px;
-    filter: opacity(30%);
+    filter: opacity(50%);
+}
+.footerHero-links img:hover{
+    filter: opacity(100%);
 }
 
 
@@ -204,6 +229,7 @@
     font-size: var(--text-size-h4);
     text-align: end;
     color: var(--dove-gray-300);
+    font-weight: 400;
 
     padding: 20px 0;
 }
@@ -226,7 +252,7 @@
 
 .container-aboutme{
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,6 +264,7 @@
     
     border-radius: 30px;
     background-color: var(--picton-blue-200);
+    border: 1px solid var(--dove-gray-200);
 }
 .container-aboutme h2{
     display: flex;
@@ -248,6 +275,7 @@
     /* margin-left: 70px;   */
     font-size: var(--text-size-h2);
     font-family: var(--font-headings);
+    color: var(--dove-gray-800);
 }
 .container-aboutme p{
     display: flex;
@@ -265,11 +293,9 @@
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 1px;
+    color: var(--dove-gray-700);
 }
 
-main{
-    margin: 0 12rem;
-}
 .aboutme-button{
     display: flex;
     justify-content: space-between;
@@ -306,6 +332,7 @@ main{
     height: auto;
     margin-top: 80px ;
     margin-bottom: 80px;
+    /* background-color: var(--picton-blue-100); */
 }
 .title-skills{
     grid-area: a;
@@ -315,14 +342,16 @@ main{
     font-size: var(--text-size-h2);
     height: 78px;
     margin-left: 70px;
+    color: var(--dove-gray-800);
 }
 .container-skills h3{
     font-size: var(--text-size-h3);
     font-family: var(--font-headings);
+    color: var(--dove-gray-800);
 }
 .container-skills-code, .container-skills-design{
     display: flex;
-    padding: 40px 36px;
+    padding: 30px 30px;
     flex-direction: column;
     background-color: var(--white);
     grid-area: b;
@@ -350,6 +379,7 @@ main{
         font-size: var(--text-size-btn-S);
         font-family: var(--font-buttons);
         font-weight: 400;
+        color: var(--dove-gray-700);
     }
 } 
 .container-skills-design{
@@ -399,6 +429,7 @@ main{
     font-family: var(--font-headings);
     font-size: var(--text-size-h2);
     margin-top: 80px;
+    color: var(--dove-gray-800);
 }
 
 .grid-projects{
@@ -416,35 +447,130 @@ main{
 .project-card{
     display: flex;
     flex-direction: column;
-
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .project-card img{
     object-fit: cover;
     display: flex;
+    overflow: hidden;
     width: 100%;
     height: 300px;
     align-items: center;
     justify-content: center;
     background-color: var(--picton-blue-100);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 .project-card h3{
     display: flex;
     justify-content: start;
-    margin: 10px 0;
+    margin: 20px 10px;
 
     font-family: var(--font-headings);
     font-size: var(--text-size-h3);
+    color: var(--dove-gray-700);
+}
+.divider-card{
+    margin: 0 auto;
+    height: 1px;
+    width: 100%;
+    background-color: var(--dove-gray-200); 
 }
 
 .project-card p{
     display: flex;
     justify-content: start;
-    margin: 10px 0;
+    margin: 20px 10px;
 
     font-family: var(--font-body);
     font-size: var(--text-size-p);
     color: var(--dove-gray-500);
     font-weight: 300;
 }
+
+/* <------------ FOOTER -------------> */
+
+.container-footer{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    /* background: var(--picton-blue-800); */
+
+    .footer-contact{
+        max-width: 1120px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 200px; */
+        margin-bottom: 20px;
+    }
+}
+.footer-contact h3{
+    font-family: var(--font-headings);
+    font-size: var(--text-size-h3);
+    color: var(--dove-gray-500);
+
+}
+.container-footer-links{
+   
+    margin: auto;
+    max-width: 1120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    gap: 20px; 
+    padding: 10px;
+}
+.footer-links img{
+    width: 30px;
+    filter:opacity(50%)
+}
+.container-whatsapp-email{
+    font-size: var(--text-size-h4);
+    font-family: var(--font-headings);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    color: var(--dove-gray-500);
+}
+.container-whatsapp-email a{
+    text-decoration: none;
+}
+.container-footer h5{
+    font-size: var(--text-size-p);
+    font-family: var(--font-body);
+    padding: 20px;
+    color: var(--dove-gray-500);
+
+}
+/* .whatsapp-container, .email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+
+    font-family: var(--font-headings);
+    font-size: var(--text-size-h4);
+    color: var(--white);
+}
+.whatsapp-container img, .email-container img{
+    width: 30px;
+    filter: invert(100%);
+} */
