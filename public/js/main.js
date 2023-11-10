@@ -22,15 +22,37 @@ const addProjectToDom = async () => {
 
   projects.forEach((project) => {
     const div = document.createElement('article')
+    // const a = document.createElement('a')
+    // const path = ' /views/ '
+    // const at = a.setAttribute('href', path, project.id);
+
+    // div.appendChild(at)
     div.className = 'project-card'
     div.innerHTML = `
-        <img src=" ${project.cover}" alt="imagen proyecto">
-        <h3> ${project.title}</h3>
-        <div class="divider-card"></div>
-        <p>${project.type}</p>
+        <a href "${project.id}.html">
+          <img src=" ${project.cover}" alt="imagen proyecto">
+          <h3> ${project.title}</h3>
+          <div class="divider-card"></div>
+          <p>${project.type}</p>
+        </a>
     `
     projectsEl.appendChild(div)
   })
 }
 
 addProjectToDom();
+
+
+////////// SIDEBAR ////////////
+
+const sidebarBtn = document.querySelector('.btn-menu');
+const closeBtn = document.querySelector('.btn-close');
+const sidebar = document.querySelector('.sidebar');
+console.log({sidebarBtn,sidebar,closeBtn});
+
+const toggleSidebar = () => {
+  sidebar.classList.toggle('active');
+}
+
+sidebarBtn.addEventListener('click', toggleSidebar);
+closeBtn.addEventListener('click', toggleSidebar);

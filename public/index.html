@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,9 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Squada+One&display=swap" rel="stylesheet">
@@ -40,28 +42,43 @@
 <body>
     <header class="container-navbar">
         <img class="navbar-logo" src="/assets/Logotype/Frame 15.svg" alt="Logotipo Daniel Tunjano">
-        <!-- <nav class="navbar">
-            <a class="button" href="#home">Home</a>
-            <a class="button" href="#proyectos">Proyectos</a>
-            <a class="button" href="#sobreMi">Sobre mi</a>
-            <a class="button" href="#Contacto">Contacto</a>
-        </nav> -->
+            <i class="btn-menu">       
+                <box-icon name='menu' animation='noe' color='#6d6d6d' size='md'></box-icon>
+            </i>
+    
         <nav class="navbar">
-            <a class="button btn-nav" href="#home">Home</a>
+            <a class=" btn-nav" href="#home">Home</a>
             <h3>|</h3>
-            <a class="button btn-nav" href="#proyectos">Proyectos</a>
+            <a class=" btn-nav" href="#proyectos">Proyectos</a>
             <h3>|</h3>
-            <a class="button btn-nav" href="#sobreMi">Sobre mi</a>
+            <a class=" btn-nav" href="#sobreMi">Sobre mi</a>
             <h3>|</h3>
-            <a class="button btn-nav" href="#Contacto">Contacto</a>
+            <a class=" btn-nav" href="#contacto">Contacto</a>
         </nav>
     </header>
+
+    <nav class="sidebar">
+        <header class="sidebar-header">
+            <i class="btn-close button"><box-icon name='x' color='#FFFFFF' size='sm'></box-icon></i>
+        </header>
+        <ul class="sidebar-list">
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#proyectos">Proyectos</a></li>
+            <li> <a href="#sobreMi">Sobre mi</a></li>
+            <li> <a href="#contacto">Contacto</a></li>
+        </ul>
+        <img src="assets/Logotype/icon-white.svg" alt="">
+    </nav>
 
     <main>
         <section id="home" class="container-hero">
             <div class="hero">
                 <img src="/assets/Logotype/Cute Avatar.svg" alt="">
-                <h1>¡Hola!,<br>&nbsp soy<span> Daniel<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tunjano</span></h1> 
+                <div class="hero-title">
+                    <h1 class="t1">¡Hola!,</h1> 
+                    <h1 class="t2">soy <span class="D">Daniel</span></h1>
+                    <h1 class="t3"><span class="T">Tunjano</span></h1>
+                </div>
             </div>
         
             <div class="container-footerHero">
@@ -92,7 +109,7 @@
        <article id="sobreMi" class="container-aboutme">
             <div class="aboutme-button">
                 <h2 >Sobre mi</h2>
-                <button class="button"><box-icon name='up-arrow-alt' size="md" rotate='90' color="white" >alt</box-icon></button>
+                <i class="button"><box-icon name='up-arrow-alt' size="md" rotate='90' color="white" ></box-icon></i>
             </div>
             
             <p> Diseñador UI/UX y desarrollador fronted, poseo habilidades tanto en diseño como en desarrollo, 
@@ -169,10 +186,12 @@
             <h2>&nbsp&nbspProyectos</h2#>
             <section class="grid-projects">
                 <!-- <article class="project-card">
-                    <img src="assets/image-projects/Desktop - 13.png" alt="imagen proyecto">
-                    <h3>Proyecto</h3>
-                    <div class="divider-card"></div>
-                    <p>Descripcion</p>
+                    <a href="/views/rockTicked-app.html">
+                        <img src="assets/image-projects/Desktop - 13.png" alt="imagen proyecto">
+                        <h3>Proyecto</h3>
+                        <div class="divider-card"></div>
+                        <p>Descripcion</p>
+                    </a>
                 </article> -->
                 <!-- <article class="project-card">
                     <img src="assets/image-projects/Desktop - 5.png" alt="imagen proyecto">
@@ -200,7 +219,7 @@
         <div class="divider"></div>
     </div>
     
-    <footer id="Contacto" class="container-footer">
+    <footer id="contacto" class="container-footer">
         <section class="footer-contact">
             <h3>Contactame</h3>
             <!-- <input type="email" name="Email" id="email" placeholder="Poner email"> -->

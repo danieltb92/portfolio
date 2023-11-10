@@ -1,0 +1,88 @@
+/* @import "style.css"; */
+
+@media (max-width: 570px) {
+
+    body{
+        margin: 0 3rem;
+    }
+    .container-navbar{
+        padding: 10px 0;
+    }
+    /* <---- SIDEBAR ----> */
+
+    .sidebar{
+        width: 50vw;
+    }
+
+    /* <---- HERO ----> */
+
+    .container-hero{
+        height: 150vw;
+    }
+    .hero{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .hero img{
+        height: 12rem; /*230px - 14.4rem*/
+        margin: 10px;
+    }
+    .hero-title{
+        width: 80%;
+        /* align-items: center; */
+        margin: 0px;
+        padding: 0px;
+    }
+    .hero-title h1{
+        font-size: var(--text-size-h2); /*var(--text-size-h2)*/
+        line-height: 45px;
+       letter-spacing: -1px;
+    }
+    .hero h1 span{
+        font-size: var(--text-size-h2);
+    }
+
+
+    .container-footerHero{
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+    .footerHero-description h3{
+        font-size: var(--text-size-h4);
+    }
+    .footerHero-description h4{
+        font-size: var(--text-size-h5);
+    }
+    .footerHero-links{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* <------ About me -----> */
+
+    .container-aboutme{
+        padding: 40px;
+    }
+    .container-aboutme h2{
+        justify-content: start;
+    }
+    .container-aboutme p{
+        margin-right: 0;
+    }
+    .container-aboutme .button{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+    }
+
+    /* <---- SKILLs ----> */
+    .container-skills{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "a a"
+        "b b"
+        "c c"
+        "d d";
+    }
+
+}

@@ -102,26 +102,43 @@
 body{
     background-image: url(/assets/dots-pattern.svg);
     background-repeat: repeat;
-}
-
-main{
     margin: 0 12rem;
 }
 
+main{
+    margin: 0 auto;
+    z-index: 0;
+}
+
+
 /* <---- NAVBAR ----> */
 
+.sidebar{
+    display: none;
+}
+
 .container-navbar{
+    /* position: fixed; */
+    top: 0;
+    /* height: 10vh; */
+    max-width: 1120px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 12rem;
-    margin-right: 12rem;
+    /* margin-left: 12rem;
+    margin-right: 12rem; */
+    z-index: 1;
      
     .navbar-logo{
         width: 50px;
+    }
+    .btn-menu{
+        visibility: hidden;
+        cursor: pointer;
     }
 }
 
@@ -130,8 +147,6 @@ main{
     padding: 2px;
     gap: 10px;
 
-    width: wrap;
-    border-radius: 30px;
     /* background: var(--picton-blue-800); */
 }
 .navbar h3{
@@ -140,36 +155,52 @@ main{
 }
 
 .btn-nav{
+    font-family: var(--font-buttons);
+    font-size: var(--text-size-btn-S);
     background: none;
     color: var(--dove-gray-800);
     padding: 6px 6px;
+
+    
+    color: #0000;
+    background: 
+    linear-gradient(90deg, var(--picton-blue-500) 50%,#000 0) 
+    var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+          background-clip: text;
+    transition: .4s;
 }
+.btn-nav:hover {
+    --_p: 0%;
+}
+
 
 /* <---- HERO ----> */
 
 
 .container-hero{
+    margin: 0 auto;
     max-width: 1120px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 6.24rem; /* 6.24rem - 100px */
     position: relative;
-    
+    /* height: 70vh; */
+    z-index: 1;
 }
 
 .hero{
     margin: 24px 0;
     display: flex;
-    max-width: 1120px;
+    /* max-width: 914px; */
     width: 100%;
-    padding: 40px 0;
+    padding: 30px 0;
     justify-content: center;
     align-items: center;
-    align-content: space-between;
-    gap: 40px;
+    gap: 30px;
+    /* height: 60vh; */
 
     border-radius: 30px;
     border: 2px dashed var(--dove-gray-200) ;
@@ -177,22 +208,36 @@ main{
 }
 .hero img{
     margin: 20px;
-    height: 230px;
+    height: 14.4rem; /*230px - 14.4rem*/
 }
-
-
-.hero h1{
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 20px;
+}
+.hero-title .t1 {
+    text-align: start;
+} 
+.hero-title .t2 {
+    text-align: center;
+} 
+.hero-title .t3 {
+    text-align: end;
+} 
+.hero-title h1{
     color:var(--dove-gray-700) ;  
     font-family: var(--font-headings);
     font-size: var(--text-size-h1);
     font-style: normal;
     font-weight: 700;
     line-height: 65px;
-    
+    width: wrap; 
+    gap: 20px;
 }
-
 .hero h1 span{
     color: var(--picton-blue-500);
+    font-size: var(--text-size-h1);
 }
 
 .container-footerHero{
@@ -252,15 +297,13 @@ main{
 
 .container-aboutme{
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    max-width: 1120px;
-    margin-top: 100px;
-    padding-left: 70px;
-    padding-right: 70px;
+    max-width: 980px;
+    margin-top: 6.24rem; /* 6.24rem - 100px */
     
     border-radius: 30px;
     background-color: var(--picton-blue-200);
@@ -303,11 +346,11 @@ main{
     width: 100%;
     text-align: end;
 }
-.container-aboutme button{
+.container-aboutme .button{
     transform: rotate(-45deg);
     position: relative;
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
    
     border-radius: 40px;
 }
@@ -315,8 +358,7 @@ main{
 /* <---- SKILLs ----> */
 
 .container-skills{
-    margin: auto;
-    display: grid;
+    margin:0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
@@ -385,23 +427,30 @@ main{
 .container-skills-design{
     grid-area: c;
 }
+
+
+
 .container-skills-lenguage{
     grid-area: d;
     display: flex;
-    padding: 50px 176px;
+    padding: 50px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    height: auto;
 
     border-radius: 30px;
     background: var(--picton-blue-700);
 
     .container-lenguage{
+        margin: auto;
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
         padding: 8px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 40px;
 
         .lenguage{
             display: flex;
@@ -435,10 +484,8 @@ main{
 .grid-projects{
     margin: auto;
     /* max-width: 1120px; */
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat( 1fr);
     /* grid-template-columns: 50% 50%; */
     gap: 40px;
     margin-top: 50px;
@@ -451,8 +498,15 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 20px;
+    transition: 1s box-shadow;
+}
+.project-card:hover{
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.2);
 }
 
+.project-card a{
+    text-decoration: none;
+}
 .project-card img{
     object-fit: cover;
     display: flex;
