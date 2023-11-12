@@ -108,6 +108,7 @@ body{
 main{
     margin: 0 auto;
     z-index: 0;
+    /* margin: 0 12rem; */
 }
 
 
@@ -118,21 +119,26 @@ main{
 }
 
 .container-navbar{
-    /* position: fixed; */
+    
     top: 0;
     /* height: 10vh; */
     max-width: 1120px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* margin-left: 12rem;
-    margin-right: 12rem; */
-    z-index: 1;
-     
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    background-color: var(--white);
+    /* border: 2px solid var(--white); */
+    /* background-image: url(/assets/dots-pattern.svg); */
+    background-repeat: repeat;
+    z-index: 10;
+    /* position: sticky;  */
+
     .navbar-logo{
         width: 50px;
     }
@@ -185,9 +191,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6.24rem; /* 6.24rem - 100px */
+    margin-bottom: 50px; /* 6.24rem - 100px */
     position: relative;
-    /* height: 70vh; */
+    height: 80vh;
     z-index: 1;
 }
 
@@ -200,7 +206,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* height: 60vh; */
+    height: 40vh;
 
     border-radius: 30px;
     border: 2px dashed var(--dove-gray-200) ;
@@ -352,7 +358,8 @@ main{
     height: 50px;
     width: 50px;
    
-    border-radius: 40px;
+    border-radius: 30px;
+    padding: 0;
 }
 
 /* <---- SKILLs ----> */
@@ -395,10 +402,12 @@ main{
     display: flex;
     padding: 30px 30px;
     flex-direction: column;
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-color: #F6F6F7;
     grid-area: b;
 
-    border:2px dashed var(--dove-gray-200);
+    /* border:2px dashed var(--dove-gray-200); */
+    border: 1px solid var(--dove-gray-200);
     border-radius: 30px;
      
 }
@@ -479,6 +488,7 @@ main{
     font-size: var(--text-size-h2);
     margin-top: 80px;
     color: var(--dove-gray-800);
+    margin-left: 70px;
 }
 
 .grid-projects{
@@ -603,8 +613,11 @@ main{
     padding: 10px;
     color: var(--dove-gray-500);
 }
-.container-whatsapp-email a{
+.container-whatsapp-email a {
     text-decoration: none;
+    font-size: var(--text-size-h4);
+    font-family: var(--font-headings);
+    color: var(--dove-gray-500);
 }
 .container-footer h5{
     font-size: var(--text-size-p);

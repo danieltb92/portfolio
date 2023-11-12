@@ -21,9 +21,9 @@
     .sidebar{
         background-color: var(--picton-blue-900);
         width: 30vw;
-        height: 92vh;
+        height: 100vh;
         border-radius: 0 0 0 20px;
-        z-index: 2;
+        z-index: 20;
         position: fixed;
         top: 0;
         right: 0;
@@ -38,6 +38,7 @@
         .sidebar-header .button{
             background-color: var(--picton-blue-700);
             padding: 8px;
+            cursor: pointer;
         }
         
         .sidebar-list{
@@ -70,7 +71,7 @@
     /* <---- HERO ----> */
 
     .container-hero{
-        height: 130vw;
+        height: 120vw;
         margin-bottom: 5rem;
     }
     .hero{
@@ -79,7 +80,7 @@
         height: 100vw;
     }
     .hero img{
-        height: 18rem; /*230px - 14.4rem*/
+        height: 18rem; /*230px - 14.4rem - 40vh - 18rem*/
     }
     .hero-title{
         width: 400px;
@@ -91,7 +92,10 @@
     .grid-projects{
         grid-template-columns: repeat(1, 1fr);
     }
-
+    /* .project-card img{
+        object-fit: cover;  
+        height: 200px;
+    } */
 
 } 
 
