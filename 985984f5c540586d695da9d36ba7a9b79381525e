@@ -1,0 +1,35 @@
+[33mcommit e6fc1dbc5a343da4d2787289330577f55e850862[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mfeature[m[33m)[m
+Author: danieltb92 <daniel.tunjano92@gmail.com>
+Date:   Sun Nov 12 18:13:27 2023 -0500
+
+    add UI emprove
+
+[33mcommit 66c502bdba8f4cb50709de63b79723b7af477e66[m
+Author: danieltb92 <daniel.tunjano92@gmail.com>
+Date:   Thu Nov 9 23:09:24 2023 -0500
+
+    add media query -- tablet-mobile
+
+[33mcommit 985984f5c540586d695da9d36ba7a9b79381525e[m
+Author: danieltb92 <daniel.tunjano92@gmail.com>
+Date:   Wed Nov 8 14:02:03 2023 -0500
+
+    add API notion & UI emprove
+
+[33mcommit d7a2a987fb5a383e7b5f9cc7b0b40458a77fdaa2[m
+Author: danieltb92 <daniel.tunjano92@gmail.com>
+Date:   Wed Nov 1 20:22:03 2023 -0500
+
+    added section 1
+
+[33mcommit 2168faff8d2ecf192d6f7d8d9ffae7c0543274ae[m
+Author: danieltb92 <daniel.tunjano92@gmail.com>
+Date:   Fri Oct 27 11:27:57 2023 -0500
+
+    first build commit
+
+[33mcommit 39be01af84b3ac3c03c5a838389e35f6def46f65[m
+Author: Daniel Tunjano <113219107+danieltb92@users.noreply.github.com>
+Date:   Mon Oct 16 00:20:19 2023 -0500
+
+    Initial commit
