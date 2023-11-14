@@ -32,7 +32,7 @@ module.exports = async function getProjects(){
         // description: page.properties.Description.rich_text[0].text.content,
       }
     })
-  
+   // Si el codigo no funciona verificar que no hayan casilla de proyectos vacia en la base de datos de NOTION
     return projects
 }
 
