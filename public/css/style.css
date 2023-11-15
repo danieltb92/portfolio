@@ -132,10 +132,10 @@ main{
     align-items: center;
     /* margin-left: 5px;
     margin-right: 5px; */
-    background-color: var(--white);
+    /* background-color: var(--white); */
     /* border: 2px solid var(--white); */
     /* background-image: url(/assets/dots-pattern.svg); */
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
     z-index: 10;
     /* position: sticky;  */
 
@@ -625,6 +625,12 @@ main{
     padding: 20px;
     color: var(--dove-gray-500);
 
+}
+.footer-links img:hover{
+    filter: opacity(100%);
+}
+.container-whatsapp-email a:hover{
+    color: var(--black);
 }
 /* .whatsapp-container, .email-container{
     display: flex;
