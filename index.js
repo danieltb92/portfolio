@@ -15,16 +15,24 @@ app.use(express.static('public'))
 //   next();
 // });
 
-app.get('/projects',async (req, res) => {
-  const projects = await getProjects()  
+app.get('/projects', async (req, res) => {
+  const projects = await getProjects()
   res.json(projects)
 })
 
-app.get('/rockTicket-app',async (req, res) =>{
+app.get('/rockTicket-app', async (req, res) => {
   const fileName = 'rockTicked-app.html'
   res.sendFile(path.join(__dirname, 'views', fileName))
 
 })
+
+app.use(function (req, res, next) {
+  res.setHeaders({
+    'Content-Security-Policy': 'default-src 'none';
+     script - src "https://api.notion.com"; ',
+  });
+  next();
+});
 
 
 // app.get('/${projects.id}',async (req, res) =>{
