@@ -29,18 +29,21 @@ const addProjectToDom = async () => {
     // div.appendChild(at)
     div.className = 'project-card'
     div.innerHTML = `
-        <a href "${project.id}.html">
-          <img src=" ${project.cover}" alt="imagen proyecto">
-          <h3> ${project.title}</h3>
-          <div class="divider-card"></div>
-          <p>${project.type}</p>
-        </a>
+        
+      <a href ="views/${project.id}/${project.id}.html" target="_blank">
+        <img src=" ${project.cover}" alt="imagen proyecto">
+        <h3> ${project.title}</h3>
+        <div class="divider-card"></div>
+        <p>${project.type}</p>
+      </a>
     `
     projectsEl.appendChild(div)
   })
 }
-
+/*<a href ="/${project.id}.html" target="_blank"><a href ="${project.url}" target="_blank">*/
 addProjectToDom();
+
+
 
 
 ////////// SIDEBAR ////////////

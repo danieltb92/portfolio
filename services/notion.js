@@ -9,37 +9,47 @@ const database_id = process.env.NOTION_DATABASE_ID;
 
 // <----------------OPCION #1 --------------------->
 
-
+// const getProjects = async () => {
 module.exports = async function getProjects(){
 
-    const payload = {
-      path: `databases/${database_id}/query`,
-      method: 'POST',
+  const payload = {
+    path: `databases/${database_id}/query`,
+    method: 'POST',
+  }
+
+  const { results } = await notion.request(payload)
+  // console.log(results);
+
+  const projects = results.map((page) => {
+    return {
+      id: page.properties.Slug.rich_text[0].plain_text,
+      name: page.properties.Name.title[0].plain_text,
+      cover: page.properties.Cover.files[0].file.url,
+      title: page.properties.TitleProject.rich_text[0].plain_text,
+      type: page.properties.Type.rich_text[0].plain_text,
+      url: page.public_url,
+      // date: page.properties.Date.date.start,
+      // tags: page.properties.Tags.rich_text[0].text.content,
+      // description: page.properties.Description.rich_text[0].text.content,
     }
-  
-    const { results } = await notion.request(payload)
-    // console.log(results);
-  
-    const projects = results.map((page) => {
-      return {
-        id: page.properties.Slug.rich_text[0].plain_text,
-        name: page.properties.Name.title[0].plain_text,
-        cover: page.properties.Cover.files[0].file.url,
-        title: page.properties.TitleProject.rich_text[0].plain_text,
-        type: page.properties.Type.rich_text[0].plain_text,
-        // date: page.properties.Date.date.start,
-        // tags: page.properties.Tags.rich_text[0].text.content,
-        // description: page.properties.Description.rich_text[0].text.content,
-      }
-    })
-   // Si el codigo no funciona verificar que no hayan casilla de proyectos vacia en la base de datos de NOTION
-    return projects
+  })
+  // Si el codigo no funciona verificar que no hayan casilla de proyectos vacia en la base de datos de NOTION
+  return projects
 }
 
 // (async () => {
 //     const nProject = await getProjects()
 //     console.log(nProject);
 // })();
+
+
+
+
+
+
+
+
+
 
 
 
