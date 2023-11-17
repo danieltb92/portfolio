@@ -50,9 +50,9 @@
 
 
 
---font-headings: Roboto Mono;
---font-body: Roboto;
---font-buttons: Inter;
+--font-headings:'Roboto Mono', monospace;;
+--font-body: 'Roboto', sans-serif;
+--font-buttons: 'Inter', sans-serif;
 }
 
 
