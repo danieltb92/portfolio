@@ -103,7 +103,7 @@ body{
     background-image: url(/assets/dots-pattern.svg);
     background-repeat: repeat;
     margin: 0 3rem;
-    background: var(--picton-blue-50);
+    /* background: var(--picton-blue-50); */
 } 
 /* #dcecf8 */
 
