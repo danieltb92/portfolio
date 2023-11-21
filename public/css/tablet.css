@@ -85,6 +85,14 @@
     .hero-title{
         width: 400px;
     }
+    .light-btn{
+        top: 6%;
+        right: 10%;
+    }
+    .dark-btn{
+        top: 10%;
+        right: 10%;
+    }
 
 
     /* <---- PROJECTS ----> */

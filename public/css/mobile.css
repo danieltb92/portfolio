@@ -60,6 +60,14 @@
         width: 100%;
         justify-content: center;
     }
+    .light-btn{
+        top: 5%;
+        right: 10%;
+    }
+    .dark-btn{
+        top: 8%;
+        right: 10%;
+    }
 
     /* <------ About me -----> */
 
