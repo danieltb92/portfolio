@@ -81,20 +81,24 @@ html{
     .btn-nav:hover {
         color: var(--dove-gray-500);
     }
-
+    
     .light-btn{
         visibility: visible;
-        transition: top 5s ease-in-out,
-         opacity 5s ease-in-out,
-         visibility 5s ease-in-out;
+        transition: top 1s ease-in-out,
+         opacity 1s ease-in-out,
+         visibility 1s ease-in-out,
+         border 500ms ease-in-out;
+    }
+    .light-btn:hover{
+        border: 3px;
     }
     .light-btn:active{
         top: 20%;
         opacity: 0;
     }  
     .dark-btn{
-        transition: top 5s ease-in-out,
-        opacity 5s ease-in-out;
+        transition: top 1s ease-in-out,
+        opacity 1s ease-in-out;
         visibility: hidden;
     }
     .dark-btn:active{
@@ -356,6 +360,10 @@ main{
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: 500ms ease-in-out;
+}
+.dark-btn:hover{
+    border: 20px ;
 }
 
 
