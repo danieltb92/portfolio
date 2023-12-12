@@ -27,7 +27,7 @@
         gap: 20px;
     }
     .hero img{
-        height: 12rem; /*230px - 14.4rem*/
+        height: 10rem; /*230px - 14.4rem*/
         margin: 10px;
     }
     .hero-title{
@@ -37,15 +37,13 @@
         padding: 0px;
     }
     .hero-title h1{
-        font-size: 2.5rem; /*var(--text-size-h2)*/
+        font-size: 1.5rem; /*var(--text-size-h2)*/
         line-height: 45px;
-       letter-spacing: -1px;
+        letter-spacing: -1px;
     }
     .hero h1 span{
-        font-size: 2.5rem; /*var(--text-size-h2)*/
+        font-size: 3rem; /*var(--text-size-h2)*/
     }
-
-
     .container-footerHero{
         flex-direction: column-reverse;
         align-items: end;
@@ -62,30 +60,43 @@
     }
     .light-btn{
         top: 5%;
-        right: 10%;
+        right: 4%;
     }
     .dark-btn{
         top: 8%;
-        right: 10%;
+        right: 4%;
     }
 
     /* <------ About me -----> */
 
     .container-aboutme{
-        padding: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0; 
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+
+    .container-aboutme{
+        padding: 40px 20px;
     }
     .container-aboutme h2{
         justify-content: start;
-        font-size: var(--text-size-h3);
+        font-size: var(--text-size-h2);
+        min-width: 240px;
+        max-width: 100%;
     }
     .container-aboutme p{
         margin-right: 0;
+        width: 100%;
     }
-    .container-aboutme .button{
+    /* .container-aboutme .button{
         height: 50px;
         width: 50px;
         padding: 0;
-    }
+    } */
 
     /* <---- SKILLs ----> */
     .container-skills{
