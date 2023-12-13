@@ -443,7 +443,7 @@ main{
 }
 
 
-/* <------ About me -----> */
+/* <------ ABOUT ME -----> */
 
 
 .container-aboutme{
@@ -462,7 +462,7 @@ main{
     justify-content: center;
     align-items: start;
     max-width: 1000px;
-    margin-top: 6.24rem; /* 6.24rem - 100px */
+    margin-top: 40PX; /* 6.24rem - 100px */
     
     box-sizing: border-box;
     border-radius: 30px;
