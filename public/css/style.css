@@ -47,7 +47,8 @@ html{
 --subTitle-2-color: var(--dove-gray-300);
 --p-color:var(--dove-gray-700);
 --container-hero-color: var(--dove-gray-200);
---acent-color: var(--picton-blue-500);
+--acent-color: var(--picton-blue-800);
+--acent-color-active: var(--picton-blue-700);
 
 
 
@@ -78,6 +79,8 @@ html{
     --subTitle-2-color: var(--dove-gray-500);
     --p-color:var(--white);
     --container-hero-color: var(--dove-gray-900);
+    --acent-color: var(--picton-blue-300);
+    --acent-color-active: var(--picton-blue-200);
 
     .btn-nav:hover {
         color: var(--dove-gray-500);
@@ -129,7 +132,7 @@ html{
 .button{
     
     text-decoration: none;
-    color: var(--white);/* Buttons/Button Small */
+    color: var(--background);/* Buttons/Button Small */
     font-family: var(--font-buttons);
     font-size: var(--text-size-btn-S);
     font-style: normal;
@@ -144,7 +147,7 @@ html{
     padding: 8px 20px;
     border: 0;
     border-radius: 30px;
-    background: var(--picton-blue-800)
+    background: var(--acent-color)
 }
 .btn-medium{
 
@@ -164,7 +167,7 @@ html{
 }
 
 .button:hover{
-    color: var(--dove-gray-900);/* Buttons/Button Small */
+    /*color: var(--dove-gray-900); Buttons/Button Small */
     background: var(--white);
     /* border-bottom: 1px solid var(--picton-blue-950); */
 }
@@ -526,7 +529,7 @@ main{
     border-radius: 6px;
 }
 .aboutme-button .button:hover{
-    background-color: var(--picton-blue-300);
+    background-color: var(--acent-color-active);
 }
 
 /* <---- SKILLs ----> */
