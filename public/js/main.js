@@ -22,6 +22,8 @@ const addProjectToDom = async () => {
 
 
   projects.forEach((project) => {
+    if (project.status === 'Published') {
+
     const div = document.createElement('article')
     // const a = document.createElement('a')
     // const path = ' /views/ '
@@ -39,6 +41,7 @@ const addProjectToDom = async () => {
       </a>
     `
     projectsEl.appendChild(div)
+    }
   })
 }
 /*<a href ="/${project.id}.html" target="_blank"><a href ="${project.url}" target="_blank">*/
