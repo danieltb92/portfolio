@@ -24,6 +24,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
+// Ruta URL del Sitemap //
+
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/sitemap.xml'))
+})
+
 // Rutas URL de los proyectos //
 
 app.get('/rockTicket-app', (req, res) => {
