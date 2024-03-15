@@ -22,8 +22,8 @@ const getProjectFromBackend = async () => {
 //   loading = true
   // const res = await fetch(`${process.env.API_URL}${PORT}/projects`)
   // console.log(res)
-  // const res = await fetch('https://daniel-tunjano.onrender.com/projects')
-  const res = await fetch('http://localhost:5000/projects')
+  const res = await fetch('https://daniel-tunjano.onrender.com/projects')
+  // const res = await fetch('http://localhost:5000/projects')
   const data = await res.json()
 //   loading = false
   return data
@@ -52,7 +52,8 @@ const addProjectToDom = async () => {
     div.innerHTML = `
         
       <!-- <a href ="views/${project.id}/${project.id}.html" target="_blank"> -->
-      <a href ="http://localhost:5000/${project.id}" target="_blank">
+      <!-- <a href ="http://localhost:5000/${project.id}" target="_blank"> -->
+      <a href ="https://daniel-tunjano.onrender.com/${project.id}" target="_blank">
         <img src=" ${project.cover}" alt="imagen proyecto">
         <h3> ${project.title}</h3>
         <div class="divider-card"></div>
