@@ -51,7 +51,8 @@ const addProjectToDom = async () => {
     div.className = 'project-card'
     div.innerHTML = `
         
-      <a href ="views/${project.id}/${project.id}.html" target="_blank">
+      <!-- <a href ="views/${project.id}/${project.id}.html" target="_blank"> -->
+      <a href ="http://localhost:5000/${project.id}" target="_blank">
         <img src=" ${project.cover}" alt="imagen proyecto">
         <h3> ${project.title}</h3>
         <div class="divider-card"></div>
