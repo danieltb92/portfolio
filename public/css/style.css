@@ -334,6 +334,18 @@ main{
     line-height: 75px;
 }
 .hero h1 span{
+    background: linear-gradient(135deg, #00000000 0, #00b2ff 30%, #00b2ff 70%, #00000000 100%);
+    /* background: linear-gradient(90deg, #FFFFFF 0, #00b2ff 30%, #00b2ff 70%, #FFFFFF 100%); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    text-align: center;
+    transform: translateZ(0);
+    background-size: 200% auto;
+    /* display: inline; */
+
+    animation: animate 15s ease infinite;
+
     color: var(--picton-blue-500);
     font-size: var(--text-size-h1);
     font-size: 5rem;
