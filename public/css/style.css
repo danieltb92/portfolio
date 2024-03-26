@@ -173,7 +173,7 @@ html{
 }
 
 body{
-    background-image: url(/assets/dots-pattern.svg);
+    /* background-image: url(../assets/dots-pattern.svg); */
     background-repeat: repeat;
     margin: 0 3rem;
     background: var(--background);
